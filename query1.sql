@@ -1,5 +1,5 @@
-select b.title, p.name
+select title
 from books as b
 inner join publisher as p
 on p.id = b.publisher
-where p.country = 'UK';
+where b.publisher = 1;
